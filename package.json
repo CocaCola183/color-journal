@@ -1,0 +1,29 @@
+{
+  "name": "color-journal",
+  "version": "0.0.0",
+  "description": "Colorful journal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CocaCola183/color-journal.git"
+  },
+  "keywords": [
+    "simple",
+    "log",
+    "journal"
+  ],
+  "author": "blackwhite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CocaCola183/color-journal/issues"
+  },
+  "homepage": "https://github.com/CocaCola183/color-journal#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "fs-extra": "^0.24.0",
+    "tracer": "^0.8.0"
+  }
+}
