@@ -49,7 +49,7 @@ function color_journal(opt) {
   /*logger*/
   return tracer.console({
     level: 0,
-    format: "[{{timestamp}}] {{title}} in {{file}}:{{line}}\n -> {{message}}",
+    format: "[{{timestamp}}] File:[{{file}}] Line:[{{line}}] Type:[{{title}}] \n {{message}}",
     dateformat: "yyyy-mm-dd HH:MM:ss",
     methods: Object.keys(log_methods),
     transport: function (data) {
@@ -59,7 +59,7 @@ function color_journal(opt) {
         } else {
           console.log(data.output)
         }
-        if (data.level >= 5) {
+        if (data.level >= record_level) {
           var logPath = log_dir + data.title + "/" + data.timestamp.substring(0, 10) + ".log"
           var writeStream = fs.createWriteStream(logPath, {
               flags: "a",

@@ -1,6 +1,6 @@
 {
   "name": "color-journal",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Colorful journal",
   "main": "index.js",
   "scripts": {
